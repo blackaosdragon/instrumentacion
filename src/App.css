@@ -1,0 +1,75 @@
+@font-face{
+  font-family: 'Znric-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url(./fuentes/zrnic.woff) format('woff');
+}
+.App {
+  text-align: center;
+  background-color: #bfbfbf;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+.BarraPrincipal {
+  margin: 0px 50px 50px 0px;
+}
+.cuadriculaImagen{
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+.cuadriculaImagen:hover .letrasHome{
+  transition: margin 0.5s;
+  margin: 0% 0% 0% 0%;
+  
+}
+.enlace{
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+.letrasHome{
+  transition: margin 2s;
+  margin: 0% 0% -25% 0%;
+}
+.subtitleCuadricula{
+  font-family: 'Znric-Regular';  
+  font-size: 115%;
+}
+.logo{
+  width: 45%;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.logo:hover{
+  transition: opacity 0.5s;
+  opacity: 0.5;
+}
+.MainBar{
+  margin: 70% 80% 50% 80%;
+
+}
+.principalButton{
+  font-family: 'Znric-Regular';
+  font-size: 150%;
+
+}
+.tituloCuadricula{
+  margin: 0 0 0 0;
+  font-family: 'Znric-Regular';
+  font-size: 130%;
+}
+
