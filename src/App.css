@@ -72,4 +72,25 @@
   font-family: 'Znric-Regular';
   font-size: 130%;
 }
-
+.cuadros {
+  
+}
+@keyframes carrusel{
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+  
+}
+.title{
+  color: #ffffff;
+  font-family: 'Znric-Regular';
+  font-size: 200%;
+  margin: 0 0 1% 0;
+}
+.description{
+  color: #ffffff;
+  font-family: 'Znric-Regular';
+  font-size: 150%;
+}
+.contacto{
+  margin: 2% 30% 0% 30%; 
+}
