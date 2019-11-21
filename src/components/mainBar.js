@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "flexboxgrid";
 import AppBar from "@material-ui/core/AppBar";
-import Button from "@material-ui/core/Button";
+
 import { Link } from "react-router-dom";
 import Logo from "../images/Logo.jpg";
 import "../App.css";
@@ -26,18 +26,14 @@ class MainBar extends Component {
           </div>
           <div class="col-xs-6">
             <div class="row center-xs">
-              <div class="col-xs-2">
+              <div class="col-xs-2" className="boton-link">
                 <Link className="enlace" to="/empresa">
-                  <Button>
-                    <p className="principalButton">Empresa</p>
-                  </Button>
+                    <p className="principalButton">Empresa</p>                  
                 </Link>
               </div>
-              <div class="col-xs-2">
-                <Link className="enlace" to="/contacto">
-                  <Button>
-                    <p className="principalButton">Contacto</p>
-                  </Button>
+              <div class="col-xs-2" className="boton-link">
+                <Link className="enlace" to="/contacto">          
+                  <p className="principalButton">Contacto</p>
                 </Link>
               </div>
             </div>
