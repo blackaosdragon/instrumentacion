@@ -155,7 +155,7 @@ class Home extends Component{
             </GridListTile>
             
             <GridListTile className="cuadriculaImagen" key="lcd.jpg">
-            <Link to="/aires" >
+            <Link to="/sensor" >
               <img className="contenedorImagen" src={Aire} alt="AiresAcondicionados" />
               <GridListTileBar
                 className="letrasHome"
@@ -281,7 +281,7 @@ class Home extends Component{
             <GridListTile className="cuadriculaImagen" key="lcd.jpg">
               
               <img className="contenedorImagen" src={Aire} alt="Autoclaves" />
-              <Link to="/aires" >
+              <Link to="/sensor" >
               <GridListTileBar
                 
                 title={<h1 className="title">fria</h1>}
