@@ -2,7 +2,8 @@ import React, {Component} from "react";
 //import socketIOClient from "socket.io-client";
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider"
 import theme from "../theme/theme.js";
-import { Container/*, Avatar, Typography, Grid, Button*/ } from '@material-ui/core'
+import { Container,/*, Avatar, Typography, Grid, Button*/ 
+Button} from '@material-ui/core'
 //import TextField from '@material-ui/core/TextField';
 //import Crono from "@material-ui/icons/Storage";
 
@@ -56,6 +57,17 @@ class Sensor extends Component{
         e.preventDefault();
         console.log('imprimir: ', this.state.usuario)
     }
+    notificacion = () => {
+        const notifi = {
+            body: 'Instrumentacion y electromecanica',
+            icon: '../../public/favicon.ico'
+        }             
+        new Notification('Sensor 1', notifi);        
+    }
+    detener = () => {
+        this.tiempo = setInterval(this.notificacion,3000);
+        clearInterval(this.tiempo);
+    }
     /*
     pintar  = () => {
         const {endPoint} = this.state
@@ -79,6 +91,9 @@ class Sensor extends Component{
                 <div style={style.paper}>
                     <h1 style={style.titulo}> LM35 </h1>
                     <h3>{this.state.value}</h3>
+                    <Button onClick={this.notificacion} variant="contained" color="primary">
+                        Enviar notificación
+                    </Button>
                     
                 </div>
                 
